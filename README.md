@@ -37,7 +37,4 @@ int main() {
     cout << fixed << setprecision(2);
     cout << "Semester GPA        : " << gpa << endl;
     cout << "Overall CGPA        : " << cgpa << endl;
-    cout << "-----------------------------\n";
-
-    return 0;
-}
+    cout << "----------------------------
