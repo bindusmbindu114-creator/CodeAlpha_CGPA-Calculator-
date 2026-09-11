@@ -1,0 +1,33 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int n;
+    float gradePoint, credit;
+    float totalPoints = 0, totalCredits = 0;
+
+    cout << "Enter number of subjects: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        cout << "\nSubject " << i << endl;
+
+        cout << "Enter grade point: ";
+        cin >> gradePoint;
+
+        cout << "Enter credit: ";
+        cin >> credit;
+
+        totalPoints += gradePoint * credit;
+        totalCredits += credit;
+    }
+
+    float cgpa = totalPoints / totalCredits;
+
+    cout << fixed << setprecision(2);
+    cout << "\nTotal Credits = " << totalCredits << endl;
+    cout << "CGPA = " << cgpa << endl;
+
+    return 0;
+}
